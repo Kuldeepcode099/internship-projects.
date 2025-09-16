@@ -4,7 +4,7 @@ This repository contains two major projects completed as part of a six-month int
 
 The two domains covered are Cybersecurity (suspicious traffic detection) and Healthcare (life expectancy prediction). Together, they showcase the application of ML in both classification and regression problems.
 
-🚀 Project 1: Cybersecurity – Suspicious Web Threat Interactions
+Project 1: Cybersecurity – Suspicious Web Threat Interactions
 
 This project focuses on analyzing web traffic data from AWS CloudWatch to detect suspicious and malicious interactions. The dataset includes details such as IP addresses, ports, bytes transmitted, country codes, and detection labels.
 
@@ -24,9 +24,9 @@ Evaluated using accuracy, precision, recall, F1-score, ROC-AUC.
 
 Achieved 90%+ accuracy with RandomForest and saved trained models for deployment readiness.
 
-👉 Notebook: Cybersecurity_Project.ipynb
+ Notebook: Cybersecurity_Project.ipynb
 
-🚀 Project 2: Life Expectancy Analysis
+ Project 2: Life Expectancy Analysis
 
 This project applies machine learning to predict life expectancy across countries based on socio-economic and health indicators such as GDP, schooling, alcohol consumption, and healthcare expenditure.
 
