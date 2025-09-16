@@ -1,13 +1,55 @@
-Project 1: Cybersecurity – Suspicious Web Threat Interactions
+Overview
 
-This project was part of my internship where I worked on analyzing web traffic data to detect suspicious and potentially harmful interactions. The dataset was collected from AWS CloudWatch logs and included information such as source and destination IPs, ports, countries, number of bytes transmitted, and detection rule names.
+This repository contains two major projects completed as part of a six-month internship in the field of Data Science and Machine Learning. Both projects demonstrate end-to-end workflows, including data cleaning, preprocessing, feature engineering, exploratory data analysis (EDA), model building, and evaluation.
 
-I started with data cleaning and preprocessing, where I handled missing values, removed duplicates, and converted time columns into a usable format. After that, I performed feature engineering by creating new columns like session duration, average packet size, and throughput. I also created a binary label (is_suspicious) to separate normal traffic from suspicious activities.
+The two domains covered are Cybersecurity (suspicious traffic detection) and Healthcare (life expectancy prediction). Together, they showcase the application of ML in both classification and regression problems.
 
-To understand the dataset better, I did Exploratory Data Analysis (EDA). I plotted distributions of bytes in/out, checked protocol and port usage, visualized traffic from different countries, and studied time-series patterns. I also created a correlation heatmap and a small sample network graph to visualize connections between IPs.
+🚀 Project 1: Cybersecurity – Suspicious Web Threat Interactions
 
-For the modeling part, I used both unsupervised and supervised learning. I applied Isolation Forest and Local Outlier Factor for anomaly detection. For classification, I trained RandomForest and also experimented with Neural Networks like MLP and Conv1D.
+This project focuses on analyzing web traffic data from AWS CloudWatch to detect suspicious and malicious interactions. The dataset includes details such as IP addresses, ports, bytes transmitted, country codes, and detection labels.
 
-Finally, I evaluated the models using accuracy, precision, recall, F1-score, and ROC-AUC. The RandomForest model gave more than 90% accuracy, while the anomaly detection models helped highlight unusual patterns in the traffic. I also saved the trained models and built a small scoring function to make the project deployment-ready.
+Key Work Done:
 
-This project gave me practical exposure to handling cybersecurity datasets and applying machine learning techniques to detect suspicious web threats.
+Cleaned and preprocessed the raw data (duplicates, missing values, timestamp conversions).
+
+Engineered features like session duration, average packet size, throughput.
+
+Conducted EDA: bytes distribution, protocol/port usage, country-wise traffic, time-series analysis, correlation heatmap, and a network graph.
+
+Applied Anomaly Detection: Isolation Forest and Local Outlier Factor.
+
+Built Classification Models: RandomForest, Multi-Layer Perceptron (MLP), and Conv1D Neural Networks.
+
+Evaluated using accuracy, precision, recall, F1-score, ROC-AUC.
+
+Achieved 90%+ accuracy with RandomForest and saved trained models for deployment readiness.
+
+👉 Notebook: Cybersecurity_Project.ipynb
+
+🚀 Project 2: Life Expectancy Analysis
+
+This project applies machine learning to predict life expectancy across countries based on socio-economic and health indicators such as GDP, schooling, alcohol consumption, and healthcare expenditure.
+
+Key Work Done:
+
+Cleaned the dataset (missing values handled with mean imputation, outliers treated using IQR).
+
+Performed EDA:
+
+Life expectancy distribution
+
+Correlation heatmap
+
+Trends across years
+
+Comparisons between developed and developing countries
+
+Preprocessed data with Label Encoding and Standard Scaling.
+
+Implemented regression models: RandomForest, ExtraTrees, GradientBoosting, XGBoost.
+
+Compared models using RMSE and R² metrics.
+
+Performed Cross Validation on XGBoost for robustness.
+
+Final model (XGBoost) achieved strong performance with low RMSE and high R².
